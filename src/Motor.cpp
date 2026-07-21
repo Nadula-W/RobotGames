@@ -100,3 +100,8 @@ void Motor::stop()
     setLeftMotor(0);
     setRightMotor(0);
 }
+void Motor::setMotorSpeed(int leftSpeed, int rightSpeed)
+{
+    setLeftMotor(leftSpeed);
+    setRightMotor(rightSpeed);
+}

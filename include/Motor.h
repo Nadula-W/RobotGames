@@ -15,10 +15,11 @@ public:
     void turnLeft(uint8_t speed);
     void turnRight(uint8_t speed);
 
-    void stop();
-
     void setLeftMotor(int speed);
     void setRightMotor(int speed);
+    void setMotorSpeed(int leftSpeed, int rightSpeed);
+
+    void stop();
 
 private:
     static constexpr uint32_t PWM_FREQUENCY = 20000; // 20 kHz

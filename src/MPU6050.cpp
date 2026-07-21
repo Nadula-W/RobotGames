@@ -19,7 +19,7 @@ void MPU6050Sensor::update()
     Wire.write(0x3B);
     Wire.endTransmission(false);
 
-    Wire.requestFrom(MPU6050_ADDRESS, 14);
+    Wire.requestFrom((uint8_t)MPU6050_ADDRESS, (uint8_t)14);
 
     ax = (Wire.read() << 8) | Wire.read();
     ay = (Wire.read() << 8) | Wire.read();
